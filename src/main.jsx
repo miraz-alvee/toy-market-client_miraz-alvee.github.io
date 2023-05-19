@@ -11,31 +11,42 @@ import AllToys from './Pages/AllToys.jsx';
 import MyToys from './Pages/MyToys.jsx';
 import AddToys from './Pages/AddToys.jsx';
 import Blog from './Pages/Blog.jsx';
+import Login from './Login/Login.jsx';
+import Signup from './SignUp/Signup.jsx';
+import AuthProvider from './Providers/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    children:[
+    children: [
       {
         path: '/',
-        element:<Home></Home>,
+        element: <Home></Home>,
       },
       {
         path: '/alltoys',
-        element:<AllToys></AllToys>,
+        element: <AllToys></AllToys>,
       },
       {
         path: '/mytoys',
-        element:<MyToys></MyToys>,
+        element: <MyToys></MyToys>,
       },
       {
         path: '/addtoys',
-        element:<AddToys></AddToys>,
+        element: <AddToys></AddToys>,
       },
       {
         path: '/blog',
-        element:<Blog></Blog>,
+        element: <Blog></Blog>,
+      },
+      {
+        path: '/login',
+        element: <Login></Login>,
+      },
+      {
+        path: '/signup',
+        element: <Signup></Signup>
       },
     ]
   },
@@ -43,6 +54,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+
+    </AuthProvider>
   </React.StrictMode>,
 )

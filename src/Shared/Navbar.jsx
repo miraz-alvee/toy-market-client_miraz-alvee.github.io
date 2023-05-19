@@ -20,7 +20,7 @@ const Navbar = () => {
                         {navItems} 
                     </ul>
                 </div>
-                <h1 className="text-3xl font-medium">Kidtask Company</h1>
+                <h1 className="text-3xl font-bold">Kidtask Company</h1>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-5 space-x-36">
@@ -28,8 +28,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Login</a>
-                <button className="btn btn-success">Login</button>
+                <button className="btn btn-success"><Link to='/login'>Login</Link></button>
             </div>
         </div>
     );
