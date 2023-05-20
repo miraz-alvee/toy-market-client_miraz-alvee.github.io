@@ -12,8 +12,8 @@ import MyToys from './Pages/MyToys.jsx';
 import AddToys from './Pages/AddToys.jsx';
 import Blog from './Pages/Blog.jsx';
 import Login from './Login/Login.jsx';
-import Signup from './SignUp/Signup.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
+import Signup from './Signup/Signup.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,8 +46,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/signup',
-        element: <Signup></Signup>
-      },
+        element: <Signup></Signup>,
+      }
     ]
   },
 ]);

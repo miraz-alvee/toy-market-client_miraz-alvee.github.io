@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
     const navItems = <>
           <li><Link to='/' className='font-bold'>Home</Link></li>
@@ -10,6 +11,7 @@ const Navbar = () => {
           <li><Link to='/blog' className='font-bold'>Blog</Link></li>
     </>
     return (
+
         <div className="navbar bg-pink-100 py-5 px-5">
             <div className="navbar-start">
                 <div className="dropdown">
@@ -31,6 +33,8 @@ const Navbar = () => {
                 <button className="btn btn-success"><Link to='/login'>Login</Link></button>
             </div>
         </div>
+
+        
     );
 };
 
