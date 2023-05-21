@@ -5,39 +5,34 @@ import 'react-tabs/style/react-tabs.css';
 
 const Toyshop = () => {
 
-    const [marevel, setMarevel] = useState([]);
+    const [marevels, setMarevels] = useState([]);
     const [avengers, setAvengers] = useState([]);
-    const [transformer, setTransformer] = useState([]);
+    const [transformers, setTransformers] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        fetch(
-            "https://speedy-nook-server-production.up.railway.app/details/subCategory/sportsCars"
-        )
+        fetch("http://localhost:5000/marvels/subCategory/marvel")
             .then((res) => res.json())
             .then((data) => {
-                setSportsCars(data);
+                setMarevels(data);
                 setIsLoading(false);
             });
     }, []);
 
     useEffect(() => {
-        fetch(
-            "https://speedy-nook-server-production.up.railway.app/details/subCategory/trucks"
-        )
+        fetch("http://localhost:5000/marvels/subCategory/avengers")
             .then((res) => res.json())
             .then((data) => {
-                setTrucks(data);
+                setAvengers(data);
                 setIsLoading(false);
             });
     }, []);
 
     useEffect(() => {
-        fetch(
-            "https://speedy-nook-server-production.up.railway.app/details/subCategory/miniFireTrucks"
+        fetch("http://localhost:5000/marvels/subCategory/transformer"
         )
             .then((res) => res.json())
             .then((data) => {
-                setMiniFireTrucks(data);
+                setTransformers(data);
                 setIsLoading(false);
             });
     }, []);
