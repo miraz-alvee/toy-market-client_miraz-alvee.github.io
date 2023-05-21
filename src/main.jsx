@@ -15,6 +15,7 @@ import Login from './Login/Login.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import Signup from './Signup/Signup.jsx';
 import PrivateRoute from './Routes/PrivateRoute.jsx';
+import ViewDetailes from './Category/ViewDetailes.jsx';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <Signup></Signup>,
+      },
+      {
+        path: '/marvels/subCategory/:id',
+        element: <ViewDetailes></ViewDetailes>
       }
     ]
   },

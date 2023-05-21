@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Mravel from './Mravel';
+import Avengers from './Avengers';
+import Transformer from './Transformer';
 
 const Toyshop = () => {
 
@@ -46,15 +48,45 @@ const Toyshop = () => {
                 <Tab>Transformer</Tab>
             </TabList>
             <TabPanel>
-                <div className="flex flex-col md:flex-row items-center  gap-11 justify-center">
-                    {marvels.map((marvel) => {
-                        return (
-                            <Mravel
-                                key={marvel._id}
-                                marvel={marvel}
-                            ></Mravel>
-                        );
-                    })}
+                <div className='container mx-auto'>
+                    <div className="flex justify-around flex-col md:flex-row items-center gap-11">
+                        {marvels.map((marvel) => {
+                            return (
+                                <Mravel
+                                    key={marvel._id}
+                                    marvel={marvel}
+                                ></Mravel>
+                            );
+                        })}
+                    </div>
+                </div>
+            </TabPanel>
+            <TabPanel>
+                <div className='container mx-auto'>
+                    <div className="flex justify-around flex-col md:flex-row items-center gap-11">
+                        {avengers.map((avenger) => {
+                            return (
+                                <Avengers
+                                    key={avenger._id}
+                                    avenger={avenger}
+                                ></Avengers>
+                            );
+                        })}
+                    </div>
+                </div>
+            </TabPanel>
+            <TabPanel>
+                <div className='container mx-auto'>
+                    <div className="flex justify-around flex-col md:flex-row items-center gap-11">
+                        {transformers.map((transformer) => {
+                            return (
+                                <Transformer
+                                    key={transformer._id}
+                                    transformer={transformer}
+                                ></Transformer>
+                            );
+                        })}
+                    </div>
                 </div>
             </TabPanel>
         </Tabs >
