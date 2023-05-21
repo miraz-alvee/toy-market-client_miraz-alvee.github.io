@@ -6,7 +6,7 @@ const Mravel = ({ marvel }) => {
     const { user } = useContext(authContext);
     return (
         <div className='container mx-auto'>
-            {/* <div className="card card-side bg-base-100 shadow-xl">
+            <div className="card card-side bg-base-100 shadow-xl">
                 <figure><img src={toyPictureURL} alt="Movie" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{toyName}</h2>
@@ -16,9 +16,7 @@ const Mravel = ({ marvel }) => {
                         <button className="btn btn-primary">View Detailes</button>
                     </div>
                 </div>
-            </div> */}
-
-
+            </div>
         </div>
     );
 };
