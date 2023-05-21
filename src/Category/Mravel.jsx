@@ -20,4 +20,4 @@ const Mravel = ({ marvel }) => {
     );
 };
 
-export default Mravel;
+export default Mravel
