@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Mravel = ({ marvel }) => {
     const { _id, toyPictureURL, toyName, price, rating } = marvel;
-    // const { user } = useContext(authContext);
+    const { user } = useContext(authContext);
     return (
         <div className="card card-side bg-base-100 shadow-xl">
             <figure><img src={toyPictureURL} alt="Movie" /></figure>
