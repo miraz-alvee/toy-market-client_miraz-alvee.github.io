@@ -21,13 +21,13 @@ const Home = () => {
           <h2 className="text-3xl text-center font-bold mb-4">Toy Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <img className="rounded-lg shadow-md" src="https://i.ibb.co/1dwKWkv/images-q-tbn-ANd9-Gc-Sk-MEz-Bu-Lk-UCRh-Hbcl-XYXFO1-Qdd-Xm-Cp-y6-IQA.jpg" alt="Toy 1" />
-            <img className="rounded-lg shadow-md" src="https://i.ibb.co/1dwKWkv/images-q-tbn-ANd9-Gc-Sk-MEz-Bu-Lk-UCRh-Hbcl-XYXFO1-Qdd-Xm-Cp-y6-IQA.jpg" alt="Toy 2" />
-            <img className="rounded-lg shadow-md" src="https://i.ibb.co/1dwKWkv/images-q-tbn-ANd9-Gc-Sk-MEz-Bu-Lk-UCRh-Hbcl-XYXFO1-Qdd-Xm-Cp-y6-IQA.jpg" alt="Toy 3" />
-            <img className="rounded-lg shadow-md" src="https://i.ibb.co/1dwKWkv/images-q-tbn-ANd9-Gc-Sk-MEz-Bu-Lk-UCRh-Hbcl-XYXFO1-Qdd-Xm-Cp-y6-IQA.jpg" alt="Toy 4" />
-            <img className="rounded-lg shadow-md" src="https://i.ibb.co/1dwKWkv/images-q-tbn-ANd9-Gc-Sk-MEz-Bu-Lk-UCRh-Hbcl-XYXFO1-Qdd-Xm-Cp-y6-IQA.jpg" alt="Toy 5" />
-            <img className="rounded-lg shadow-md" src="https://i.ibb.co/1dwKWkv/images-q-tbn-ANd9-Gc-Sk-MEz-Bu-Lk-UCRh-Hbcl-XYXFO1-Qdd-Xm-Cp-y6-IQA.jpg" alt="Toy 6" />
+            <img className="rounded-lg shadow-md" src="https://i.ibb.co/Lp3cPnb/images-q-tbn-ANd9-Gc-Rt8k-Nc-AQdp9-D9a-Bx5-Jo7-Px-Lf2s1-VGe-Ki-HJ9g.jpg" alt="Toy 2" />
+            <img className="rounded-lg shadow-md" src="https://i.ibb.co/264vyL4/images-q-tbn-ANd9-Gc-RU1dp-Uk3-SEOf7-SFPw5-LIc-U6-YDr-E-GUs-J2rwv-Rf4-Uxn0-HMSN3-BLOu-E953-Yz-Tg-Xc.jpg" alt="Toy 3" />
+            <img className="rounded-lg shadow-md" src="https://i.ibb.co/1ZDgrC2/images-q-tbn-ANd9-Gc-QJm-Yb-BKqofu-To-XC0gpru-Qi28ka-Yb-PXu-IPy-A.jpg" alt="Toy 4" />
+            <img className="rounded-lg shadow-md" src="https://i.ibb.co/jG2JJ3J/images-q-tbn-ANd9-Gc-Rqden-Rs-VDd-Wbn-R3-Sz-WYEgw-C4-KPo6og38-CNw.jpg" alt="Toy 5" />
+            <img className="rounded-lg shadow-md" src="https://i.ibb.co/264vyL4/images-q-tbn-ANd9-Gc-RU1dp-Uk3-SEOf7-SFPw5-LIc-U6-YDr-E-GUs-J2rwv-Rf4-Uxn0-HMSN3-BLOu-E953-Yz-Tg-Xc.jpg" alt="Toy 6" />
             <img className="rounded-lg shadow-md" src="https://i.ibb.co/1dwKWkv/images-q-tbn-ANd9-Gc-Sk-MEz-Bu-Lk-UCRh-Hbcl-XYXFO1-Qdd-Xm-Cp-y6-IQA.jpg" alt="Toy 7" />
-            <img className="rounded-lg shadow-md" src="https://i.ibb.co/1dwKWkv/images-q-tbn-ANd9-Gc-Sk-MEz-Bu-Lk-UCRh-Hbcl-XYXFO1-Qdd-Xm-Cp-y6-IQA.jpg" alt="Toy 8" />
+            <img className="rounded-lg shadow-md" src="https://i.ibb.co/jG2JJ3J/images-q-tbn-ANd9-Gc-Rqden-Rs-VDd-Wbn-R3-Sz-WYEgw-C4-KPo6og38-CNw.jpg" alt="Toy 8" />
           </div>
         </div>
       </section>
