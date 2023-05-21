@@ -41,9 +41,9 @@ const AllToys = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {filteredToys.map((toy) => (
-                            <tr key={toy._id} toy={toy}>
-                                <th>1</th>
+                        {filteredToys.map((toy,index) => (
+                            <tr key={toy._id} index={index} toy={toy}>
+                                <th>{index+1}</th>
                                 <td>{toy.sellerName}</td>
                                 <td>{toy.toyName}</td>
                                 <td>{toy.subCategory}</td>

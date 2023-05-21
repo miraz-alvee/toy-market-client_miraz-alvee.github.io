@@ -14,6 +14,7 @@ import Blog from './Pages/Blog.jsx';
 import Login from './Login/Login.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import Signup from './Signup/Signup.jsx';
+import PrivateRoute from './Routes/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,12 +30,20 @@ const router = createBrowserRouter([
         element: <AllToys></AllToys>,
       },
       {
-        path: '/mytoys',
-        element: <MyToys></MyToys>,
+        path: "/mytoys",
+        element: (
+          <PrivateRoute>
+            <MyToys></MyToys>
+          </PrivateRoute>
+        ),
       },
       {
-        path: '/addtoys',
-        element: <AddToys></AddToys>,
+        path: "/addtoys",
+        element: (
+          <PrivateRoute>
+            <AddToys></AddToys>,
+          </PrivateRoute>
+        ),
       },
       {
         path: '/blog',

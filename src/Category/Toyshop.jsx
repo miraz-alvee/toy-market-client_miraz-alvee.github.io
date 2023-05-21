@@ -34,7 +34,7 @@ const Toyshop = () => {
                                 <p>100</p>
                                 <p>4.5</p>
                                 <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Viex Detailes</button>
+                                    <button className="btn btn-primary">View Detailes</button>
                                 </div>
                             </div>
                         </div>
