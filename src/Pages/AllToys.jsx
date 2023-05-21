@@ -5,7 +5,7 @@ const AllToys = () => {
     const [search, setSearch] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:5000/marvels')
+        fetch(' https://toy-market-server-indol.vercel.app/marvels')
             .then(res => res.json())
             .then(data => setAlltoys(data));
     }, []);

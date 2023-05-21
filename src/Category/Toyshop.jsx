@@ -13,7 +13,7 @@ const Toyshop = () => {
     const [transformers, setTransformers] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        fetch("http://localhost:5000/marvels/subCategory/marvel")
+        fetch(" https://toy-market-server-indol.vercel.app/marvels/subCategory/marvel")
             .then((res) => res.json())
             .then((data) => {
                 setMarvels(data);
@@ -22,7 +22,7 @@ const Toyshop = () => {
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:5000/marvels/subCategory/avengers")
+        fetch(" https://toy-market-server-indol.vercel.app/marvels/subCategory/avengers")
             .then((res) => res.json())
             .then((data) => {
                 setAvengers(data);
@@ -31,7 +31,7 @@ const Toyshop = () => {
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:5000/marvels/subCategory/transformer"
+        fetch(" https://toy-market-server-indol.vercel.app/marvels/subCategory/transformer"
         )
             .then((res) => res.json())
             .then((data) => {

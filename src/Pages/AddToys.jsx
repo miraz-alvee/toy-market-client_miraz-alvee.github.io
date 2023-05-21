@@ -28,7 +28,7 @@ const AddToys = () => {
             detailDescription: detailDescription,
         };
 
-        fetch("http://localhost:5000/details", {
+        fetch(" https://toy-market-server-indol.vercel.app/marvels", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

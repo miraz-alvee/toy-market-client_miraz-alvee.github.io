@@ -8,56 +8,13 @@ const MyToys = () => {
     const [myToys, setMyToys] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myToys/${user?.email}`)
+        fetch(` https://toy-market-server-indol.vercel.app/myToys/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 setMyToys(data);
                 setIsLoading(false);
             });
     }, [user?.email]);
-
-    //   const handleDelete = (id) => {
-    //     Swal.fire({
-    //       title: "Are you sure?",
-    //       text: "You won't be able to revert this!",
-    //       icon: "warning",
-    //       showCancelButton: true,
-    //       confirmButtonColor: "#3085d6",
-    //       cancelButtonColor: "#d33",
-    //       confirmButtonText: "Yes, delete it!",
-    //     }).then((result) => {
-    //       if (result) {
-    //         fetch(`https://speedy-nook-server.vercel.app/details/${id}`, {
-    //           method: "DELETE",
-    //         })
-    //           .then((res) => res.json())
-    //           .then((data) => {
-    //             console.log(data);
-    //             if (data.deletedCount > 0) {
-    //               Swal.fire(
-    //                 "Deleted!",
-    //                 "Your added toy has been deleted.",
-    //                 "success"
-    //               );
-    //               const remaining = myToys.filter((myToy) => myToy._id !== id);
-    //               setMyToys(remaining);
-    //             }
-    //           });
-    //       }
-    //     });
-    //   };
-
-    //   const handleSort = () => {
-    //     const sortedToys = [...myToys].sort((a, b) => {
-    //       if (sortOrder === "asc") {
-    //         return a.price - b.price;
-    //       } else {
-    //         return b.price - a.price;
-    //       }
-    //     });
-    //     setMyToys(sortedToys);
-    //     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-    //   };
 
     return (
         <div className="overflow-x-auto w-full p-6">

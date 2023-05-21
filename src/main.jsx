@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         element: <Signup></Signup>,
       },
       {
-        path: '/marvels/subCategory/:id',
+        path: 'https://toy-market-server-indol.vercel.app/marvels/subCategory/:id',
         element: <ViewDetailes></ViewDetailes>
       }
     ]
